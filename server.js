@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.get('/', function(req,res){
-    res.json(path.join(__dirname,'app/public/index.html'));
+    res.json(path.join(__dirname,'app/public/home.html'));
 });
 require(path.join(__dirname, './app/routing/apiRoutes'))(app);
 require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
